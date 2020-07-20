@@ -19,21 +19,13 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  color: #000000;
-}
-
 nav {
   overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
   background-color: #ffffff;
+  border-bottom: 1px solid lightgray;
 }
 
 nav a {
@@ -78,8 +70,8 @@ nav a.active {
 
 .quote {
   text-align: center;
-  font-size: 50px;
-  padding: 150px;
+  font-size: 24px;
+  padding: 1.5em;
 }
 
 .padding-tb {
@@ -91,20 +83,45 @@ nav a.active {
   color: #ffffff;
 }
 
-.home {
+#home {
   background-color: #ffffff;
-  height: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 450px;
+  margin-top: 3em;
+}
+
+/* Create two equal columns that floats next to each other */
+.column-1 {
+  float: left;
+  width: 47%;
+  padding: 10px;
+}
+
+.column-2 {
+  width: 49%;
+  padding: 10px;
+  float: right;
+}
+
+.home-img {
+  border-radius: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 footer a {
   text-decoration: none;
 }
 
-.about {
-  background-color: aqua;
+#about {
+  background-color: #4fc96e;
+  text-align: center;
+  color: #ffffff;
+  height: 450px;
 }
 
 .projects {
