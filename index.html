@@ -5,21 +5,30 @@
       WebCourse
     </title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
+
     <!-- This is Navigation Section to add menus-->
-    <section id="menu">
-      <div id="menuBar">
-        <nav>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-        </nav>
-      </div>
-    </section>
+    <nav>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#home" class="active">Home</a>
+    </nav>
+
+    <section id="home" class="home">
+      <div>
+          <!--Image that fills the top with text above
+          <h1 class="quote">The purpose of technology is not to confuse the brain but to server the body !</h1>
+          <h2 class="quote">Williams S.Burroughs</h2> 
+          -->
+      </div>    
+  </section>
+
     <!-- This is about section -->
-    <section id="about">
+    <section id="about" class="padding-tb">
       <h1>About</h1>
       <div>
         <h3>Muhammad Ikram Ul Haq</h1>
@@ -92,13 +101,11 @@
     </section>
 
         <!-- This is footer section-->
-    <section>
       <footer>
         <!--Social media tags and contact info-->
-        <a href="#menuBar"> Back to top </a>
-        <br>
-        <br>
-        <div class="social">
+        <a href="#navbar" class="white"> Back to top </a>
+        <div class="center">
+          <p>© Designed by Muhammad Ikram Ul Haq</p>
           <a href="https://www.facebook.com/mikramulhaq" target="_blank">
             <img src="images/facebook.svg" alt="facebook icon" width="30px" />
           </a>
@@ -116,9 +123,7 @@
         >
           <img src="images/github.svg" alt="github icon" width="30px" />
         </a>
-        </div>
-        <p>© Designed by Muhammad Ikram UL Haq</p>
+         </div>
       </footer>
-    </section>
   </body>
 </html>

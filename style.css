@@ -1,1 +1,114 @@
 /* This is css file */
+
+/* color palette */
+
+/*
+
+#3C41D6
+#373DED
+#353BE6
+#373DED
+#383EE6
+#4FC96E
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  background-color: white;
+  margin: 5px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  color: #000000;
+}
+
+nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+nav a {
+  color: #000000;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  float: right;
+}
+
+nav a:hover {
+  background-color: #4fc96e;
+  color: #ebe9e4;
+}
+
+nav a.active {
+  background-color: #4a4bc7;
+  color: #ebe9e4;
+}
+
+.nav-right {
+  float: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.quote {
+  text-align: center;
+  font-size: 50px;
+  padding: 150px;
+}
+
+.padding-tb {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.home {
+  background-color: #ffffff;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.about {
+  background-color: aqua;
+}
+
+.projects {
+}
+
+.skills {
+}
