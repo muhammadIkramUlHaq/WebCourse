@@ -38,7 +38,7 @@ nav {
 }
 
 nav a {
-  color: #000000;
+  color: #0a639f;
   text-align: center;
   padding: 10px;
   text-decoration: none;
@@ -125,6 +125,7 @@ footer a {
 
 #skills {
   background-color: #ffffff;
+  color: #0a639f;
   margin-top: 3em;
 }
 
