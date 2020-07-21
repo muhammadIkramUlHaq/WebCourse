@@ -45,12 +45,12 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #4fc96e;
+  background-color: #6e7cfb;
   color: #ebe9e4;
 }
 
 nav a.active {
-  background-color: #4fc96e;
+  background-color: #6e7cfb;
   color: #ebe9e4;
 }
 
@@ -110,13 +110,13 @@ footer a {
 }
 
 #about {
-  background-color: #4fc96e;
+  background-color: #6e7cfb;
   text-align: center;
   color: #ffffff;
 }
 
 #hobbies {
-  background-color: #4fc96e;
+  background-color: #6e7cfb;
   text-align: center;
   color: #ffffff;
   margin-top: 3em;
@@ -148,10 +148,10 @@ footer a {
   font-size: 1.5em;
   text-align: center;
 
-  border: 3px solid #4fc96e;
+  border: 3px solid #6e7cfb;
   border-radius: 20px;
 
-  background-color: rgba(79, 201, 110, 0.7);
+  background-color: rgba(110, 124, 251, 0.7);
   box-shadow: 0 0 5px 0 black;
 }
 
@@ -166,7 +166,7 @@ footer a {
 }
 
 .footer-links {
-  background-color: #4fc96e;
+  background-color: #6e7cfb;
   padding-top: 0.5em;
   color: #ffffff;
 }
