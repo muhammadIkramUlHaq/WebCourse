@@ -94,7 +94,7 @@ nav a.active {
   text-align: center;
   color: #ffffff;
 
-  background-image: url("/Images/hero.jpg");
+  background-image: url("Images/hero.jpg");
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -147,9 +147,6 @@ footer a {
   text-align: center;
   color: #ffffff;
   height: 450px;
-}
-
-.projects {
 }
 
 .skills {
