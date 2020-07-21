@@ -15,7 +15,6 @@
 
 body {
   background-color: white;
-  margin: 5px;
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -26,16 +25,17 @@ nav {
   width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0 2px 0 black;
 }
 
 nav a {
   color: #000000;
   text-align: center;
-  display: block;
   padding: 10px;
   text-decoration: none;
   font-size: 16px;
-  float: right;
 }
 
 nav a:hover {
@@ -44,12 +44,8 @@ nav a:hover {
 }
 
 nav a.active {
-  background-color: #4a4bc7;
+  background-color: #4fc96e;
   color: #ebe9e4;
-}
-
-.nav-right {
-  float: right;
 }
 
 .left {
@@ -85,8 +81,41 @@ nav a.active {
 
 #home {
   background-color: #ffffff;
-  height: 450px;
-  margin-top: 3em;
+}
+
+.hero-banner {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: #ffffff;
+
+  background-image: url("/Images/hero.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-banner h1 {
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+
+  text-shadow: 0 5px 0 black;
+}
+
+.hero-banner p {
+  font-size: 2.5em;
+  display: block;
+}
+
+.row {
+  display: flex;
 }
 
 /* Create two equal columns that floats next to each other */
@@ -100,10 +129,6 @@ nav a.active {
   width: 49%;
   padding: 10px;
   float: right;
-}
-
-.home-img {
-  border-radius: 50%;
 }
 
 /* Clear floats after the columns */
@@ -128,4 +153,13 @@ footer a {
 }
 
 .skills {
+  background-color: #ffffff;
+  height: 450px;
+  margin-top: 3em;
+}
+
+.skills-text {
+  text-align: center;
+  font-size: 16px;
+  padding: 1.5em;
 }

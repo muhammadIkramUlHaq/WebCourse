@@ -8,26 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
-  <body>
 
+  <body>
     <!-- This is Navigation Section to add menus-->
     <nav>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#home" class="active">Home</a>
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#projects">Projects</a>
     </nav>
 
     <section id="home">
-      <div class="row">
-        <div class="column-1">
-          <h2 class="quote">The purpose of technology is not to confuse the brain but to server the body.</h2>
-          <h3 class="quote">Williams S.Burroughs</h3> 
-        </div>
-        <div class="column-2">
-          <img class="home-img" src="Images/Best.jpg" width="400px" height="400px" alt="Technology Image" />
-        </div>
-      </div>  
+      <div class="hero-banner">
+        <h1>The purpose of technology is not to confuse the brain but to server the body.</h1>
+        <p>Williams S.Burroughs</p> 
+      </div>
   </section>
 
     <!-- This is about section -->
@@ -57,45 +53,40 @@
       </div>
     </section>
 
-    <!-- This is project section -->
-    <section id="projects">
-      <h1>Projects</h1>
-      <iframe 
-      width="560" 
-      height="315" 
-      src="https://www.youtube.com/embed/dKjCWfuvYxQ" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-    </iframe>
-    </section>
           <!-- This is language -->
-    <section id="skills">
-      <h1>Skills</h1>
-            <p>
-              Programming
-            </p>
-            <ul>
-              <li>Java</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-            <p>
-              Hardware
-            </p>
-            <ul>
-              <li>FPGA</li>
-              <li>MicroController</li>
-              <li>Digital Electronics</li>
-            </ul>
-            <p>
-              Languages
-            </p>
-            <ul>
-              <li>English</li>
-              <li>Urdu</li>
-              <li>Punjabi</li>
-            </ul>
+    <section id="skills" class="padding-tb">
+      <div class="row">
+        <div class="column-1 skills-text">
+          <p>
+            Programming
+          </p>
+          <ul>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <p>
+            Hardware
+          </p>
+          <ul>
+            <li>FPGA</li>
+            <li>MicroController</li>
+            <li>Digital Electronics</li>
+          </ul>
+          <p>
+            Languages
+          </p>
+          <ul>
+            <li>English</li>
+            <li>Urdu</li>
+            <li>Punjabi</li>
+          </ul>
+        </div>
+        <div class="column-2">
+          <img class="home-img" src="Images/skills.jpg" width="400px" height="400px" alt="Technology Image" />
+        </div>
+  
+      </div>
     </section>
 
         <!-- This is hobbies -->
@@ -107,6 +98,19 @@
       </p>
       <p>In a long run, I would like to learn Swimming and Peddel Tennis.</p>
     </section>
+
+        <!-- This is project section -->
+        <section id="projects">
+          <h1>Projects</h1>
+          <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/dKjCWfuvYxQ" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        </section>
 
         <!-- This is footer section-->
       <footer>
