@@ -15,6 +15,7 @@
 
 body {
   background-color: white;
+  width: 100vw;
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -22,7 +23,8 @@ nav {
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   background-color: #ffffff;
   border-bottom: 1px solid lightgray;
   display: flex;
@@ -88,6 +90,7 @@ nav a.active {
   height: 100vh;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -96,7 +99,6 @@ nav a.active {
 
   background-image: url("Images/hero.jpg");
   background-position: center center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -116,6 +118,10 @@ nav a.active {
 
 .row {
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
 }
 
 /* Create two equal columns that floats next to each other */
@@ -149,14 +155,60 @@ footer a {
   height: 450px;
 }
 
-.skills {
+#hobbies {
+  background-color: #4fc96e;
+  text-align: center;
+  color: #ffffff;
+  height: 450px;
+  margin-top: 3em;
+}
+
+#skills {
   background-color: #ffffff;
   height: 450px;
   margin-top: 3em;
 }
 
-.skills-text {
+#projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+}
+
+.btn {
+  display: block;
+  width: 200px;
+
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5em;
   text-align: center;
+
+  border: 3px solid #4fc96e;
+  border-radius: 20px;
+
+  background-color: rgba(79, 201, 110, 0.7);
+  box-shadow: 0 0 5px 0 black;
+}
+
+.card-text {
   font-size: 16px;
   padding: 1.5em;
+}
+
+.circle-img {
+  border-radius: 50%;
+}
+
+.footer-links {
+  background-color: #4fc96e;
+  padding-top: 0.5em;
+  color: #ffffff;
 }

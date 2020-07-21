@@ -11,13 +11,15 @@
 
   <body>
     <!-- This is Navigation Section to add menus-->
-    <nav>
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#hobbies">Hobbies</a>
-      <a href="#projects">Projects</a>
-    </nav>
+    <section id="top">
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#projects">Projects</a>
+      </nav>
+  </section>
 
     <section id="home">
       <div class="hero-banner">
@@ -30,25 +32,27 @@
     <section id="about" class="padding-tb">
       <div class="row">
         <div class="column-1">
-          <img class="home-img" src="Images/ikram.jpg" width="400px" height="400px" alt="Technology Image" />
+          <img class="circle-img" src="Images/ikram.jpg" width="400px" height="400px" alt="Technology Image" />
         </div>
         <div class="column-2" style="text-align: left;">
           <h3>Muhammad Ikram Ul Haq</h1>
             <h4>Software Engineer</h3>
-            <h4>Pakistan</h3>
-            <p>
-              I born and raised in Pakistan, completed my primary, secondary, higher
-              secondary and then unviersity education there. After graduated from
-              university started a job as Software Engineer in Islamabad (Capital
-              city of Pakistan). After getting some exposure of software industry ,
-              I decided to come to Europe for higher studies. I got admission in EIT
-              Digital which is dual degree program. I completed first year at TU
-              Berlin and second year at KTH stockholm.
-            </p>
-            <p>
-              I have five sisters and two brothers and all of them are older than me.
-              All of them are resident of Pakistan.
-            </p>
+              <div class="card-text"> 
+                <p>
+                  I born and raised in Pakistan, completed my primary, secondary, higher
+                  secondary and then unviersity education there. After graduated from
+                  university started a job as Software Engineer in Islamabad (Capital
+                  city of Pakistan). After getting some exposure of software industry ,
+                  I decided to come to Europe for higher studies. I got admission in EIT
+                  Digital which is dual degree program. I completed first year at TU
+                  Berlin and second year at KTH stockholm.
+                </p>
+                <p>
+                  I have five sisters and two brothers and all of them are older than me.
+                  All of them are resident of Pakistan.
+                </p>
+              </div>
+          
         </div>
       </div>
     </section>
@@ -56,7 +60,7 @@
           <!-- This is language -->
     <section id="skills" class="padding-tb">
       <div class="row">
-        <div class="column-1 skills-text">
+        <div class="column-1 card-text">
           <p>
             Programming
           </p>
@@ -83,40 +87,49 @@
           </ul>
         </div>
         <div class="column-2">
-          <img class="home-img" src="Images/skills.jpg" width="400px" height="400px" alt="Technology Image" />
+          <img class="circle-img" src="Images/skills.jpg" width="400px" height="400px" alt="Technology Image" />
         </div>
   
       </div>
     </section>
 
         <!-- This is hobbies -->
-    <section id="hobbies">
-      <h1>Hobbies</h1>
-      <p>
-        I like to do biking whenever I get time to do that. Besides that I
-        regularly play cricket and football.
-      </p>
-      <p>In a long run, I would like to learn Swimming and Peddel Tennis.</p>
+    <section id="hobbies" class="padding-tb">
+      <div class="row">
+        <div class="column-1">
+          <img class="circle-img" src="Images/hobbies.jpg" width="400px" height="400px" alt="Hobbies Image" />
+        </div>
+        <div class="column-2" style="text-align: left;">
+         <div class="card-text">
+          <p>
+            I like to do biking whenever I get time to do that. Besides that I
+            regularly play cricket and football.
+          </p>
+          <p>In a long run, I would like to learn Swimming and Peddel Tennis.</p>
+         </div>
+         
+        </div>
+      </div>   
     </section>
 
         <!-- This is project section -->
-        <section id="projects">
-          <h1>Projects</h1>
+        <section id="projects" class="padding-tb">
           <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/dKjCWfuvYxQ" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/dKjCWfuvYxQ" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
         </section>
+
+        <a class="btn" href="#top"> Back to Home </a>
 
         <!-- This is footer section-->
       <footer>
         <!--Social media tags and contact info-->
-        <a href="#navbar" class="white"> Back to top </a>
-        <div class="center">
+        <div class="center footer-links">
           <p>© Designed by Muhammad Ikram Ul Haq</p>
           <a href="https://www.facebook.com/mikramulhaq" target="_blank">
             <img src="images/facebook.svg" alt="facebook icon" width="30px" />
