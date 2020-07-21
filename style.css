@@ -13,10 +13,14 @@
 */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
-  width: 100vw;
   font-family: "Noto Sans", sans-serif;
+  margin: 0;
 }
 
 nav {
@@ -48,41 +52,6 @@ nav a:hover {
 nav a.active {
   background-color: #4fc96e;
   color: #ebe9e4;
-}
-
-.left {
-  text-align: left;
-}
-
-.right {
-  text-align: right;
-}
-
-.center {
-  text-align: center;
-}
-
-.justify {
-  text-align: justify;
-}
-
-.quote {
-  text-align: center;
-  font-size: 24px;
-  padding: 1.5em;
-}
-
-.padding-tb {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-.white {
-  color: #ffffff;
-}
-
-#home {
-  background-color: #ffffff;
 }
 
 .hero-banner {
@@ -118,54 +87,43 @@ nav a.active {
 
 .row {
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
+  flex-wrap: wrap;
 }
 
-/* Create two equal columns that floats next to each other */
+/* Create two columns that sits next to each other */
 .column-1 {
-  float: left;
-  width: 47%;
+  flex: 48%;
   padding: 10px;
 }
 
 .column-2 {
-  width: 49%;
+  flex: 48%;
   padding: 10px;
-  float: right;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 footer a {
   text-decoration: none;
 }
 
+#home {
+  background-color: #ffffff;
+}
+
 #about {
   background-color: #4fc96e;
   text-align: center;
   color: #ffffff;
-  height: 450px;
 }
 
 #hobbies {
   background-color: #4fc96e;
   text-align: center;
   color: #ffffff;
-  height: 450px;
   margin-top: 3em;
 }
 
 #skills {
   background-color: #ffffff;
-  height: 450px;
   margin-top: 3em;
 }
 
@@ -173,12 +131,11 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 450px;
 }
 
 .btn {
   display: block;
-  width: 200px;
+  width: 225px;
 
   padding: 1em;
   margin-top: 50px;
@@ -205,10 +162,53 @@ footer a {
 
 .circle-img {
   border-radius: 50%;
+  width: 400px;
 }
 
 .footer-links {
   background-color: #4fc96e;
   padding-top: 0.5em;
   color: #ffffff;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.quote {
+  text-align: center;
+  font-size: 24px;
+  padding: 1.5em;
+}
+
+.padding-tb {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.white {
+  color: #ffffff;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .circle-img {
+    width: 100%;
+  }
 }
