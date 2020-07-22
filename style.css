@@ -41,7 +41,7 @@ nav .navbar {
 }
 
 nav .navbar * {
-  margin-right: 25px;
+  margin-right: 5px;
 }
 
 nav .navbar a {
@@ -70,6 +70,7 @@ nav h3 {
   margin-block-start: auto;
   margin-block-end: auto;
   font-size: larger;
+  text-transform: uppercase;
 }
 
 .hero-banner {
@@ -123,6 +124,7 @@ nav h3 {
 .column-1 {
   flex: 48%;
   padding: 10px;
+  text-align: center;
 }
 
 .column-2 {
@@ -159,6 +161,13 @@ footer a:hover {
   background-color: #ffffff;
   color: #0a639f;
   margin-top: 3em;
+}
+
+.skill-card {
+  border: 1px solid #0a639f;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
 }
 
 #projects {

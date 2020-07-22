@@ -7,6 +7,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
@@ -15,11 +19,11 @@
       <nav>
         <h3>Muhammad Ikram Ul Haq</h3>
         <div class="navbar">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#hobbies">Hobbies</a>
-          <a href="#projects">Projects</a>
+          <a href="#home"> <i class="fa fa-home"></i>Home</a>
+          <a href="#about"> <i class="fa fa-user"></i>About</a>
+          <a href="#skills"> <i class="fa fa-certificate"></i>Skills</a>
+          <a href="#hobbies"> <i class="fa fa-futbol-o"></i>Hobbies</a>
+          <a href="#projects"> <i class="fa fa-youtube-play"></i>Projects</a>
         </div>
       </nav>
     </section>
@@ -46,15 +50,15 @@
           />
         </div>
         <div class="column-2" style="text-align: left;">
-          <h4>Software Engineer</h4>
           <div class="card-text">
+            <h4>Fullstack Web Application Developer</h4>
             <p>
               I was born and raised in Pakistan, completed my primary,
-              secondary, higher secondary and then unviersity education there.
+              secondary, higher secondary and then university education there.
               After graduated from university started a job as Software Engineer
               in Islamabad (Capital city of Pakistan). After getting some
-              exposure of software industry , I decided to come to Europe for
-              higher studies. I got admission in EIT Digital which is dual
+              exposure of software industry , I decided to pursure my higher
+              studies from Europe. I got admission in EIT Digital which is dual
               degree program. I completed first year at TU Berlin and second
               year at KTH stockholm.
             </p>
@@ -70,33 +74,38 @@
     <!-- This is language -->
     <section id="skills" class="padding-tb">
       <div class="row">
-        <div class="column-1 card-text">
-          <p>
-            Programming
-          </p>
-          <ul>
-            <li>Java</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-          <p>
-            Hardware
-          </p>
-          <ul>
-            <li>FPGA</li>
-            <li>MicroController</li>
-            <li>Digital Electronics</li>
-          </ul>
-          <p>
-            Languages
-          </p>
-          <ul>
-            <li>English</li>
-            <li>Urdu</li>
-            <li>Punjabi</li>
-          </ul>
+        <div class="column-1">
+          <div class="skill-card">
+            <h4>FRONTEND</h4>
+            <img src="images/frontend.svg" alt="frontend icon" width="30px" />
+            <p>
+              React.js • Angular • HTML5 • Styled Components • CSS • SCSS •
+              jQuery • Bootstrap
+            </p>
+          </div>
+          <div class="skill-card">
+            <h4>BACKEND</h4>
+            <img src="images/backend.svg" alt="backend icon" width="30px" />
+            <p>
+              Java • Spring • Maven • C# • MongoDB • SQL
+            </p>
+          </div>
+          <div class="skill-card">
+            <h4>HARDWARE</h4>
+            <img src="images/hardware.svg" alt="hardware icon" width="30px" />
+            <p>
+              FPGA • MicroController • Digital Electronics
+            </p>
+          </div>
+          <div class="skill-card">
+            <h4>LANGUAGES</h4>
+            <img src="images/languages.svg" alt="language icon" width="30px" />
+            <p>
+              English • Urdu • Punjabi
+            </p>
+          </div>
         </div>
-        <div class="column-2">
+        <div class="column-2" style="text-align: center;">
           <img
             class="circle-img"
             src="images/skills.jpg"
@@ -126,7 +135,7 @@
             </p>
             <p>
               I like travelling and getting to know about the history of
-              different countries and their culture.
+              different countries and their cultures.
             </p>
             <p>I would like to learn Swimming and Peddel Tennis.</p>
           </div>
@@ -138,8 +147,8 @@
     <section id="projects" class="padding-tb">
       <div class="wrapper">
         <iframe
-          width="560"
-          height="315"
+          width="640"
+          height="480"
           src="https://www.youtube.com/embed/fzrUy4PfqUU"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -157,6 +166,7 @@
       <!--Social media tags and contact info-->
       <div class="center footer-links">
         <p>© Designed by Muhammad Ikram Ul Haq</p>
+        <p><i class="fa fa-envelope"></i> &nbsp; ikramulhaq1992@gmail.com</p>
         <a href="https://www.facebook.com/mikramulhaq" target="_blank">
           <img src="images/facebook.svg" alt="facebook icon" width="30px" />
         </a>
