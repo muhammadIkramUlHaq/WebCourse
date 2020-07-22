@@ -3,7 +3,6 @@
 /* color palette */
 
 /*
-
 #3C41D6
 #373DED
 #353BE6
@@ -33,26 +32,44 @@ nav {
   background-color: #ffffff;
   border-bottom: 1px solid lightgray;
   display: flex;
-  justify-content: flex-end;
-  box-shadow: 0 2px 0 black;
+  box-shadow: 0 0 10px 0 black;
 }
 
-nav a {
+nav .navbar {
+  margin-left: auto;
+  padding: 1em;
+}
+
+nav .navbar * {
+  margin-right: 25px;
+}
+
+nav .navbar a {
   color: #0a639f;
   text-align: center;
   padding: 10px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: large;
 }
 
-nav a:hover {
+nav .navbar a:hover {
   background-color: #0a639f;
   color: #ebe9e4;
 }
 
-nav a.active {
+nav .navbar a.active {
   background-color: #0a639f;
   color: #ebe9e4;
+}
+
+nav h3 {
+  color: #0a639f;
+  margin-left: 25px;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-block-start: auto;
+  margin-block-end: auto;
+  font-size: larger;
 }
 
 .hero-banner {
@@ -74,11 +91,22 @@ nav a.active {
 }
 
 .hero-banner h1 {
-  font-size: 5em;
+  font-size: 3.5em;
   margin-top: 0;
   margin-bottom: 0.5em;
 
   text-shadow: 0 5px 0 black;
+  animation-name: hero-banner;
+  animation-duration: 4s;
+}
+
+@keyframes hero-banner {
+  from {
+    color: white;
+  }
+  to {
+    color: darkblue;
+  }
 }
 
 .hero-banner p {
@@ -104,6 +132,10 @@ nav a.active {
 
 footer a {
   text-decoration: none;
+}
+
+footer a:hover {
+  opacity: 0.7;
 }
 
 #home {
@@ -132,7 +164,25 @@ footer a {
 #projects {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.text {
+  font-size: larger;
+  font-weight: 200;
   justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .btn {
